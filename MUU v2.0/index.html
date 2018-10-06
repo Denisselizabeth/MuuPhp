@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <title>Sorvete Muu®</title>
+</head>
+<body>
+
+  <div class="container">
+  	<div class="row">
+
+
+
+                          <!-- Login / Register Modal-->
+                          <div class="modal fade login-register-form" role="dialog">
+                              <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">
+                                              <span class="glyphicon glyphicon-remove"></span>
+                                          </button>
+                                          <ul class="nav nav-tabs">
+                                              <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
+                                              <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
+                                          </ul>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="tab-content">
+                                              <div id="login-form" class="tab-pane fade in active">
+                                                  <form action="/">
+                                                      <div class="form-group">
+                                                          <label for="email">Email:</label>
+                                                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label for="pwd">Password:</label>
+                                                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                                      </div>
+                                                      <div class="checkbox">
+                                                          <label><input type="checkbox" name="remember"> Remember me</label>
+                                                      </div>
+                                                      <button type="submit" class="btn btn-default">Login</button>
+                                                  </form>
+                                              </div>
+                                              <div id="registration-form" class="tab-pane fade">
+                                                  <form action="/">
+                                                      <div class="form-group">
+                                                          <label for="name">Your Name:</label>
+                                                          <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label for="newemail">Email:</label>
+                                                          <input type="email" class="form-control" id="newemail" placeholder="Enter new email" name="newemail">
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label for="newpwd">Password:</label>
+                                                          <input type="password" class="form-control" id="newpwd" placeholder="New password" name="newpwd">
+                                                      </div>
+                                                      <button type="submit" class="btn btn-default">Register</button>
+                                                  </form>
+                                              </div>
+
+                                          </div>
+                                      </div>
+  <!--                                    <div class="modal-footer">-->
+  <!--                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+  <!--                                    </div>-->
+                                  </div>
+                              </div>
+                          </div>
+  	</div>
+  </div>
+
+<!-- MUU NAVBAR -->
+  <nav class="navbar navbar-dark navbar-muu navbar-expand-sm sticky-top">
+    <div class="container">
+      <div class="navbar-brand"href="#">
+      <img src="images/navbar-muu.png" class="navbar-img" style="width: 120px;" alt="Muu Logo"></div>
+      <button class="navbar-toggler"type="button" data-toggle="collapse"
+              data-target="#togglerNav" aria-controls="togglerNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="togglerNav">
+          <div class="navbar-nav nav-fill ml-auto">
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Products</a>
+            <a class="nav-item nav-link" href="#">About Muu</a>
+            <a class="nav-item nav-link disable">|</a>
+
+
+
+
+
+            <a class="nav-item nav-link"data-toggle="modal" data-target=".login-register-form" href="#login-form">Login</a>
+
+
+
+
+
+
+
+
+
+
+
+
+            <a class="nav-item nav-link" data-toggle="modal" data-target=".login-register-form" href="#register-form">Register</a>
+          </div><!-- navbar -->
+        </div>  <!-- collapse -->
+    </div><!-- container -->
+  </nav><!-- nav -->
+
+<!-- 1st Parallax Section -->
+<div class="jumbotron paral paralsec">
+  <h1 class="display-3">Here is a heading 1</h1>
+  <p class="lead">Here is a short description 1</p>
+  <p class="lead">
+  <a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a>
+  </p>
+</div>
+
+<div class="container mt-5 ">
+  <div class="row">
+
+    <div class="col-sm-6 col-md-4">
+      <section class="card text-center mb-5" id="drwinthrop">
+          <img class="card-img-top" src="images/product_img_1.jpg" alt="Doctor Winthrop Photo">
+            <div class="card-img-overlay">
+
+               <a href="#" class="btn btn-add">Add to cart</a>
+            </div>
+        </section>
+    </div>
+    <!-- 1st card -->
+    <div class="col-sm-6 col-md-4">
+      <section class="card text-center mb-5" id="drwinthrop">
+          <img class="card-img-top" src="images/product_img_3.jpg" alt="Doctor Winthrop Photo">
+            <div class="card-img-overlay">
+
+               <a href="#" class="btn btn-add">Add to cart</a>
+            </div>
+        </section>
+    </div>
+    <!-- 2nd card -->
+    <div class="col-sm-6 col-md-4">
+      <section class="card text-center mb-5" id="drwinthrop">
+          <img class="card-img-top" src="images/product_img_1.jpg" alt="Doctor Winthrop Photo">
+            <div class="card-img-overlay">
+
+               <a href="#" class="btn btn-add">Add to cart</a>
+            </div>
+        </section>
+    </div>
+    <!-- 3rd card -->
+    <div class="col-sm-6 col-md-4">
+      <section class="card text-center mb-5" id="drwinthrop">
+          <img class="card-img-top" src="images/product_img_2.jpg" alt="Doctor Winthrop Photo">
+            <div class="card-img-overlay">
+
+               <a href="#" class="btn btn-add">Add to cart</a>
+            </div>
+        </section>
+    </div>
+    <!-- 4th card -->
+    <div class="col-sm-6 col-md-4">
+      <section class="card text-center mb-5" id="drwinthrop">
+          <img class="card-img-top" src="images/product_img_3.jpg" alt="Doctor Winthrop Photo">
+            <div class="card-img-overlay">
+
+               <a href="#" class="btn btn-add">Add to cart</a>
+            </div>
+        </section>
+    </div>
+    <!-- 5th card -->
+    <div class="col-sm-6 col-md-4">
+      <section class="card text-center mb-5" id="drwinthrop">
+          <img class="card-img-top" src="images/product_img_2.jpg" alt="Doctor Winthrop Photo">
+            <div class="card-img-overlay">
+
+               <a href="#" class="btn btn block btn-add">Add to cart</a>
+            </div>
+        </section>
+    </div>
+    <!-- 6th card -->
+
+  </div><!-- groups -->
+</div><!-- content container -->
+
+<!-- 2nd Parallax Section -->
+<div class="jumbotron paral paralsec1">
+  <h1 class="display-3">Here is a heading 2</h1>
+  <p class="lead">Here is a short description 2</p>
+  <p class="lead">
+  <a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button">Here is a button 2</a>
+  </p>
+</div>
+
+<!-- 3rd Parallax Section -->
+<div class="jumbotron paral paralsec2">
+  <h1 class="display-3">Here is a heading 3</h1>
+  <p class="lead">Here is a short description 2</p>
+  <p class="lead">
+  <a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
+  </p>
+</div>
+
+<!-- 4th Parallax Section -->
+<div class="jumbotron paral paralsec3">
+  <h1 class="display-3">Here is a heading 3</h1>
+  <p class="lead">Here is a short description 2</p>
+  <p class="lead">
+  <a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
+  </p>
+</div>
+
+
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

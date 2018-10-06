@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/blue-bcg.png);
+  background-size: cover;
+}
+.container-footer {
+  border-top: 2px solid #fff;
+}
