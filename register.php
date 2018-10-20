@@ -21,7 +21,7 @@
 		// Persisto los datos con la información que envía el usuario por $_POST
 		$name = trim($_POST['name']);
 		$email = trim($_POST['email']);
-		$addres = trim($_POST['address']);
+		$address = trim($_POST['address']);
 		$telephone = trim($_POST['telephone']);
 		$gender = trim($_POST['gender']);
 		// Valido y guardo en errores

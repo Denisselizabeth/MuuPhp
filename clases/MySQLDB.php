@@ -1,5 +1,10 @@
 <?php
-namespace DB;
+namespace Database;
+
+require_once ('DB.php');
+
+use Database\DB;
+use \PDO;
 
 class MySQLDB extends DB
 {
@@ -26,14 +31,18 @@ class MySQLDB extends DB
 		$placeholders = '';
 
 		foreach ($data as $columna => $valor) {
-			$columnas .= "$columna,";
+      // $columnas = $columnas . "$columna,";
+      // $columnas = 'title, ';
+      // $columnas = 'title, description, ';
+      $columnas .= "$columna,";
 			$placeholders .= ":$columna,";
 		}
 
 		$columnas = trim($columnas, ',');
 		$placeholders = trim($placeholders, ',');
 
-		$stmt = $this->pdo->prepare("INSERT INTO $model->entidad ($columnas) VALUES ($placeholders)");
+    // INSERT INTO ice_creams (size, flavour) VALUES (:size, :flavour)
+		$stmt = $this->pdo->prepare("INSERT INTO $model->table ($columnas) VALUES ($placeholders)");
 		$stmt->execute($data);
   }
 
@@ -47,8 +56,12 @@ class MySQLDB extends DB
 
   	$set = trim($set, ',');
 
-  	$stmt = $this->pdo->prepare("UPDATE {$model->entidad} SET $set WHERE id = :id");
+    // MySQL "UPDATE ice_creams SET size = '1' WHERE id = 32"
+    // PDO "UPDATE ice_creams SET size = '1' WHERE id = :id"
+    // $data['id'] = 32;
+  	$stmt = $this->pdo->prepare("UPDATE {$model->table} SET $set WHERE id = :id");
   	$data['id'] = $model->id;
+
   	$stmt->execute($data);
   }
 
@@ -62,7 +75,7 @@ class MySQLDB extends DB
 
   	$set = trim($set, ',');
 
-  	$stmt = $this->pdo->prepare("SELECT {$model->entidad} SET $set WHERE id = :id");
+  	$stmt = $this->pdo->prepare("SELECT {$model->table} SET $set WHERE id = :id");
   	$data['id'] = $model->id;
   	$stmt->execute($data);
   }
@@ -77,7 +90,7 @@ class MySQLDB extends DB
 
   	$set = trim($set, ',');
 
-  	$stmt = $this->pdo->prepare("DELETE {$model->entidad} SET $set WHERE id = :id");
+  	$stmt = $this->pdo->prepare("DELETE {$model->table} SET $set WHERE id = :id");
   	$data['id'] = $model->id;
   	$stmt->execute($data);
   }

@@ -1,14 +1,15 @@
 <?php
 	require_once 'funciones.php';
 	require_once 'clases/DB.php';
+	require_once 'clases/MySQLDB.php';
 	require_once 'clases/db_connection.php';
 	require_once 'clases/modelo.php';
 	require_once 'clases/ice_cream.php';
 	require_once 'clases/ice_creams.php';
-	require_once 'classes/size.php';
-	require_once 'classes/sizes.php';
-	require_once 'classes/user.php';
-	require_once 'classes/users.php';
+	require_once 'clases/size.php';
+	require_once 'clases/sizes.php';
+	require_once 'clases/user.php';
+	require_once 'clases/users.php';
 
 
 	if (estaLogueado()) {

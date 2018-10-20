@@ -1,5 +1,6 @@
 <?php
 require_once 'clases/DB.php';
+require_once 'clases/MySQLDB.php';
 require_once 'clases/db_connection.php';
 require_once 'clases/modelo.php';
 require_once 'clases/ice_cream.php';
@@ -23,8 +24,11 @@ require_once 'clases/users.php';
 		- Usa la función traerUltimoID() para generar un ID para cada usuario
 		- Retorna el array con el usuario final
 	*/
-		$usuario= new user;
-		$usuario = save([
+
+		/*
+		$usuario = new user;
+
+		$usuario->save([
 			'name' => $data['name'],
 			'email' => $data['email'],
 			'pass' => password_hash($data['pass'], PASSWORD_DEFAULT),
@@ -34,19 +38,20 @@ require_once 'clases/users.php';
 			'avatar' => 'img/' . $data['email'] . '.' . pathinfo($_FILES[$imagen]['name'], PATHINFO_EXTENSION)
 		]);
 
-		$usuario= new ice_cream;
-		$usuario = save([
+		$usuario = new ice_cream;
+		$usuario->save([
 			'flavour' => $data['flavour'],
 			'size_id' => $data['size_id'],
 			'calories' => $data['calories'],
 			'avatar' => 'img/helados' . $data['flavour'] . '.' . pathinfo($_FILES[$imagen]['name'], PATHINFO_EXTENSION)
 		]);
 
-		$usuario= new size;
-		$usuario = save([
+		$usuario = new size;
+		$usuario->save([
 			'size_id' => $data['size_id'],
 	]);
-
+  */
+	
 	// == FUNCTION - validar ==
 	/*
 		- Recibe dos parámetros -> $_POST y el nombre del campo de subir imagen
